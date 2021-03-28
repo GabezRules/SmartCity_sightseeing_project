@@ -92,6 +92,7 @@ public class MonumentsListAdapter extends RecyclerView.Adapter<MonumentsListAdap
                 .load(currentItem.get_imageUrl())
                 .centerCrop()
                 .circleCrop()
+                .dontAnimate()
                 .error(R.drawable.ic_seen_outlined)
                 .listener(new RequestListener<Drawable>() {
                     @Override
