@@ -3,11 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MonumentsListFragment">
 
-    <fragment
-        android:id="@+id/monumentListFragment"
-        class="com.gabez.smartcity_sightseeing_project.MonumentsListFragment"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/monumentsList"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
