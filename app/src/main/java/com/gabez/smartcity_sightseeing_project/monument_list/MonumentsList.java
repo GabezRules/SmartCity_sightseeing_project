@@ -1,4 +1,6 @@
-package com.gabez.smartcity_sightseeing_project;
+package com.gabez.smartcity_sightseeing_project.monument_list;
+
+import com.gabez.smartcity_sightseeing_project.Monument;
 
 import java.util.ArrayList;
 

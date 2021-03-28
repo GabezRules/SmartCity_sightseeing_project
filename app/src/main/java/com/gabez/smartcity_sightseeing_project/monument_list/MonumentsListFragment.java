@@ -1,4 +1,4 @@
-package com.gabez.smartcity_sightseeing_project;
+package com.gabez.smartcity_sightseeing_project.monument_list;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -8,6 +8,9 @@ import android.view.ViewGroup;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.gabez.smartcity_sightseeing_project.Monument;
+import com.gabez.smartcity_sightseeing_project.R;
 
 import java.util.Objects;
 

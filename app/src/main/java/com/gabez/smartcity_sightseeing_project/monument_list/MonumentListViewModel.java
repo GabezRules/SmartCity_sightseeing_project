@@ -1,6 +1,8 @@
-package com.gabez.smartcity_sightseeing_project;
+package com.gabez.smartcity_sightseeing_project.monument_list;
 
 import androidx.lifecycle.ViewModel;
+
+import com.gabez.smartcity_sightseeing_project.Monument;
 
 import java.util.ArrayList;
 

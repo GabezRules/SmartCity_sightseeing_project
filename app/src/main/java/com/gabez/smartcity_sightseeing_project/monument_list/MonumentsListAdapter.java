@@ -1,4 +1,4 @@
-package com.gabez.smartcity_sightseeing_project;
+package com.gabez.smartcity_sightseeing_project.monument_list;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
@@ -19,6 +19,8 @@ import com.bumptech.glide.load.DataSource;
 import com.bumptech.glide.load.engine.GlideException;
 import com.bumptech.glide.request.RequestListener;
 import com.bumptech.glide.request.target.Target;
+import com.gabez.smartcity_sightseeing_project.Monument;
+import com.gabez.smartcity_sightseeing_project.R;
 
 import java.util.ArrayList;
 
