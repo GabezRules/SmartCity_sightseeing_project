@@ -1,4 +1,4 @@
-package com.gabez.smartcity_sightseeing_project;
+package com.gabez.smartcity_sightseeing_project.monument_list;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -8,6 +8,10 @@ import android.view.ViewGroup;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.gabez.smartcity_sightseeing_project.Monument;
+import com.gabez.smartcity_sightseeing_project.R;
+import com.gabez.smartcity_sightseeing_project.monument_details.MonumentDetailsFragment;
 
 import java.util.Objects;
 
@@ -64,7 +68,9 @@ public class MonumentsListFragment extends Fragment implements MonumentListCallb
 
     @Override
     public void showMonument(Monument monument) {
-
+        MonumentDetailsFragment detailsFragment = MonumentDetailsFragment.newInstance(monument);
+        assert getFragmentManager() != null;
+        detailsFragment.show(getFragmentManager(), "monument_details_fragment");
     }
 
     void refreshList(){
@@ -72,6 +78,6 @@ public class MonumentsListFragment extends Fragment implements MonumentListCallb
     }
 
     void refreshList(int position){
-        monumentsList.getAdapter().notifyItemChanged(position);
+        Objects.requireNonNull(monumentsList.getAdapter()).notifyItemChanged(position);
     }
 }
